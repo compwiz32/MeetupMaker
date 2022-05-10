@@ -1,4 +1,4 @@
-function New-RTPSUGEventMetaData {
+function New-MeetingMetaData {
     <#
     .SYNOPSIS
     Short description
@@ -26,11 +26,11 @@ function New-RTPSUGEventMetaData {
 
        $HybridEventNotes = "This is hybrid event. You can attend in-person or remotely via Teams. If you are attending in person, you need to visit http://link.commandline.ninja/rtpsugvistorlist and add you name to visitor list."
 
-        $RemoteAttendeeNotes = "Remote Attendes, please use $($RTPSUGEventInfo.VideoChatLink) to join the meeting."
+        $RemoteAttendeeNotes = "Remote Attendes, please use $($MeetupEventInfo.VideoChatLink) to join the meeting."
 
         $MeetupFooter = @"
 Want to know what time this meeting is in your time zone?
-$($RTPSUGEventInfo.TimeZoneInfo)
+$($MeetupEventInfo.TimeZoneInfo)
 
 About RTPSUG:
 We're a group of PowerShell pros from all walks of life who love to share ideas with fellow community members. Our meetings are open to anyone who would like to talk about and learn more about how to PowerShell!
@@ -55,10 +55,10 @@ GITHUB: https://github.com/rtpsug
 
         $YouTubeInfo = [PSCustomObject]@{
             VideoDescription = @"
-$($RTPSUGEventInfo.EventDescription)
+$($MeetupEventInfo.EventDescription)
 
 Speaker Bio:
-$($RTPSUGSpeakerInfo.Bio)
+$($SpeakerProfile.Bio)
 
 About the Research PowerShell UserGroup:
 $($YouTubeFooter)
@@ -68,22 +68,22 @@ $($YouTubeFooter)
     }
 
     process {
-        $global:RTPSUGMetaData = [PSCustomObject]@{
-            Title              = $RTPSUGEventInfo.Title
-            Date               = $RTPSUGEventInfo.Date
-            Time               = $RTPSUGEventInfo.StartTime
-            EventDuration      = $RTPSUGEventInfo.EventDuration
+        $global:MeetingMetaData = [PSCustomObject]@{
+            Title              = $MeetupEventInfo.Title
+            Date               = $MeetupEventInfo.Date
+            Time               = $MeetupEventInfo.StartTime
+            EventDuration      = $MeetupEventInfo.EventDuration
             EventType          = $EventType
             LocationAddress    = $LocationAddress
             LocationNotes      = $LocationNotes
-            VideoChatLink      = $RTPSUGEventInfo.VideoChatLink
+            VideoChatLink      = $MeetupEventInfo.VideoChatLink
             MeetupDescription  = @"
-$($RTPSUGEventInfo.Tagline)
+$($MeetupEventInfo.Tagline)
 
-$($RTPSUGEventInfo.Description)
+$($MeetupEventInfo.Description)
 
 Speaker Bio:
-$($RTPSUGSpeakerInfo.SpeakerBio))
+$($SpeakerProfile.SpeakerBio))
 
 Meeting Attendance Info:
 $HybridEventNotes
@@ -95,23 +95,23 @@ $RecordingNotice
 "@
 
             YouTubeDescription = @"
-$($RTPSUGEventInfo.Tagline)
+$($MeetupEventInfo.Tagline)
 
-$($RTPSUGEventInfo.Description)
+$($MeetupEventInfo.Description)
 
 Speaker Bio:
-$($RTPSUGSpeakerInfo.SpeakerBio))
+$($SpeakerProfile.SpeakerBio))
 
 $($YouTubeFooter)
 "@
-        SocialMediaText    = $($RTPSUGEventInfo.TagLine)
-        SocialHashTags     = $($RTPSUGEventInfo.SocialHashTags)
-        VideoHashTags      = $($RTPSUGEventInfo.VideoHashTags)
+        SocialMediaText    = $($MeetupEventInfo.TagLine)
+        SocialHashTags     = $($MeetupEventInfo.SocialHashTags)
+        VideoHashTags      = $($MeetupEventInfo.VideoHashTags)
     }
 
-    $global:RTPSUGSpeakerInfo
+    $global:SpeakerProfile
 
-    $global:RTPSUGMetaData
+    $global:MeetingMetaData
 }
 
 }
