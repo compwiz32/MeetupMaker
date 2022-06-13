@@ -1,13 +1,12 @@
 $EventInfoSplat = @{
-    Title = "A hitchhiker's guide to writing scripts"
-    Date = "5/18/2022 6:00 pm"
-    VideoChatLink = "http://link.commandline.ninja/may-meeting2-2022"
-    TimeZoneInfo = "https://everytimezone.com/s/a3952c2f"
-    Tagline = "Need to automate something with PowerShell but don't know where to start? Join $($SpeakerProfile.Name) for look at how to get started!"
-    Description = "Maybe you've found a script somewhere and want to adjust it to work well for you (and not be a bane on future self, trying to fix it a year down the road)? DON'T PANIC! We can help! $($SpeakerProfile.Name) will cover all the basics of how to write good scripts. We'll discuss the following: How to write proper scripts, How to run them easily. How to clean up an existing script and How to author your own scripts from scratch. Last but not least, we'll cover the best Practices for designing scripts your future self is going to like debugging."
-    SocialHashTags = "#PowerShell"
-    VideoHashTags = "powershell scripting tutorial","powershell script design tutorial","powershell script design for beginners","getting started with PowerShell"
+    Title = "Azure Functions & PowerShell: Migrating The Unmigrateable"
+    Date = "06/15/2022 6:00 pm"
+    VideoChatLink = "https://meeting.rtpsug.com/"
+    TimeZoneInfo = "https://link.rtpsug.com/timezoneinfo"
+    Tagline = "What do you do when you need to migrate and modernize a ton of Azure resources with zero downtime? Join $($SpeakerProfile.Name) for some tales about how he used AzureFunctions to automate migrating thousands of VM's, SQL DB's and storage accounts with zero downtime."
+    Description = "You've probably heard of Azure functions, but maybe you're not sure where to get started or what you can do with them. Maybe you use Azure functions but aren't using them to their full capability. $($SpeakerProfile.Name) will start with a brief introduction to Azure Functions. Then he will show how you can use PowerShell and Azure functions to manage your Azure resources. From there, $($SpeakerProfile.FirstName) will dive into some specific scenarios that he encountered and how he engineered solutions when one didn't seem possible."
+    SocialHashTags = "#PowerShell","#Azure","#AzureFuncions"
+    VideoHashTags = "azure functions migration","azure functions tutorial","Using PowerShell with Azure Functions"
 }
 
 New-MeetupEvent @EventInfoSplat
-

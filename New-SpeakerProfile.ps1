@@ -46,15 +46,15 @@ function New-SpeakerProfile {
     process {
         $global:SpeakerProfile = [PSCustomObject]@{
             Name       = $FirstName + " " + $LastName
-            Shortname  = $FirstName
+            FirstName  = $FirstName
             Nickname   = $Nickname
             Email      = $EmailAddress
             GitHub     = $GitHubAddress
             Twitter    = $TwitterHandle
+            Website    = $Website
             SpeakerBio = if (!($Nickname)) {
                 $FirstName + " " + $LastName + " " + $SpeakerBio
-            }
-            else {
+            } else {
                 $FirstName + " aka " + $Nickname + " " + $SpeakerBio
             }
 

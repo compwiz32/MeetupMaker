@@ -53,7 +53,7 @@ General notes
 
     process {
         $global:MeetupEventInfo = [PSCustomObject]@{
-            Title          = $Title + " " + "(" + $(SpeakerProfile.Name) + ")"
+            Title          = $Title + " " + "(" + $($SpeakerProfile.Name) + ")"
             Date           = $Date
             StartTime      = Get-Date $Date -UFormat "%I:%M %p"
             EventDuration  = $EventDuration
