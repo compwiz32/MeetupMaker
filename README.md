@@ -10,29 +10,32 @@ More to come for this module which is still an early alpha build but works in it
 
 ## How to use these functions
 
-- use the included splat files for your data (see config files folder)). Execute the splats and they will call the functions.
+Use the included splat files for your data (see config files folder).
+Execute the splats and they will call the functions.
 
 Step1:
 
-- load the functions into memory
+Load the functions into memory
+
   - New-SpeakerProfile.ps1
   - New-MeetingData.ps1
   - New-SocialMediaMetadata.ps1
 
 Step 2:
-
-- Fill out the `SpeakerProfileSplat.ps1` and run the script. It will generate a variable called `$SpeakerProfile`
+Fill out the `SpeakerProfileSplat.ps1` and run the script. It will generate a variable called `$SpeakerProfile`
 
 Step 3:
-
-- Fill out the `MeetingDataSplat.ps1` and run the script. It will generate a variable called `$MeetingInfo`
+Fill out the `MeetingDataSplat.ps1` and run the script. It will generate a variable called `$MeetingInfo`
 
 Step 4:
-
-- Run `New-SocialMediaMetaData.ps1` . It will generate a variable called `$SocialMediaInfo` that will have all the info for a Meetup meeting and the related social media info for various platforms.
-
+Run `New-SocialMediaMetaData.ps1` . It will generate a variable called `$SocialMediaInfo` that will have all the info for a Meetup meeting and the related social media info for various platforms.
 
 ## Extras
 
-- New-MeetingChecklist.ps1 - creates a markdown formatted checklist for a meeting
-- New-MeetupPlaceholder.ps1 - need to create a quick meeting placeholder? Use this script for the bare minimum of data for an event.
+`New-MeetingChecklist.ps1`
+
+- creates a markdown formatted checklist for a meeting
+
+`New-MeetupPlaceholder.ps1`
+
+- need to create a quick meeting placeholder? Use this script for the bare minimum of data for an event.
