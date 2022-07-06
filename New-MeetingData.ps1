@@ -1,4 +1,4 @@
-function New-MeetupEvent {
+function New-MeetingData {
 
     <#
 .SYNOPSIS
@@ -21,9 +21,16 @@ General notes
         [ValidateNotNullOrEmpty()]
         [string]$Title,
 
-        [Parameter(Mandatory)]
+        [Parameter()]
         [ValidateNotNullOrEmpty()]
-        [DateTime]$Date = (Get-Date -Format "dddd MM/dd/yyyy HH:mm"),
+        [DateTime]$MeetingDate,
+
+        [Parameter()]
+        [ValidateNotNullOrEmpty()]
+        [String]$MeetingStartTime,
+
+        [ValidateSet("Hybrid", 'InPerson', 'Remote')]
+        [string]$EventType,
 
         [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
@@ -48,14 +55,15 @@ General notes
     )
 
     begin {
-        $EventDuration = New-Timespan -Hours 2
+        $EventDuration = "2 Hours"
     }
 
     process {
-        $global:MeetupEventInfo = [PSCustomObject]@{
+        $global:MeetingInfo = [PSCustomObject]@{
             Title          = $Title + " " + "(" + $($SpeakerProfile.Name) + ")"
-            Date           = $Date
-            StartTime      = Get-Date $Date -UFormat "%I:%M %p"
+            MeetingDate    = $MeetingDate
+            StartTime      = $MeetingStartTime
+            EventType      = $EventType
             EventDuration  = $EventDuration
             VideoChatLink  = $VideoChatLink
             TimeZoneInfo   = $TimeZoneInfo
@@ -65,7 +73,7 @@ General notes
             Description    = $Description
         }
 
-        $global:MeetupEventInfo
+        $global:MeetingInfo
 
     }
 

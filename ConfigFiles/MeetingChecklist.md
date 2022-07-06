@@ -1,4 +1,6 @@
-### Pre-meeting checklist
+# Event checklist
+
+## Pre event tasks
 
 - [ ] Decide on Topic and/or speaker
 - [ ] Book speaker
@@ -10,7 +12,7 @@
 - [ ] LOCAL ONLY - Book conference room
 - [ ] Create Teams Meeting (LOCAL MEETINGS GET A DIFFERENT TEAMS LINK)
 - [ ] Socialize event (Twitter, Facebook, LinkedIn, etc.)
-- [ ] LOCAL ONLY - Call TekSystems re Food and Sponsorship
+- [ ] LOCAL ONLY - Call TEKSystems re Food and Sponsorship
 - [ ] LOCAL ONLY - Update Align Visitor software with local attendee names
 - [ ] LOCAL ONLY - Test joining teams meeting from conference room
 - [ ] LOCAL ONLY - Request podium if its not in room already
@@ -18,7 +20,7 @@
 - [ ] Update Short.io meeting link with teams meeting link
 - [ ] Host and record the meeting
 
-### Post meeting checklist
+## Post event tasks
 
 - [ ] Send video to shared folder
 - [ ] RTPSUG Team members edits video
