@@ -14,7 +14,7 @@ Use the included splat files for your data (see config files folder).
 Execute the splats and they will call the functions.
 
 **Step1:**
-Load the functions into memory**
+Load the functions into memory
 
   - New-SpeakerProfile.ps1
   - New-MeetingData.ps1
