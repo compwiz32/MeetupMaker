@@ -31,10 +31,8 @@ Run `New-SocialMediaMetaData.ps1` . It will generate a variable called `$SocialM
 
 ## Extras
 
-`New-MeetingChecklist.ps1`
+`New-MeetingChecklist.ps1`:
+This file creates a markdown formatted checklist for a meeting.
 
-- creates a markdown formatted checklist for a meeting
-
-`New-MeetupPlaceholder.ps1`
-
-- need to create a quick meeting placeholder? Use this script for the bare minimum of data for an event.
+`New-MeetupPlaceholder.ps1`:
+Need to create a quick meeting placeholder? Use this script for the bare minimum of data for an event.
