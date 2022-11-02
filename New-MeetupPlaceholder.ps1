@@ -16,13 +16,13 @@ function New-MeetupPlaceHolder {
     )
 
     begin {
-        $Description = "We're still working on the details. Check back later for more information about this event!"
+        $Description = "This is just a placeholder while we're working on the details. Check back later for more information about this event!"
     }
 
     process {
         $global:MeetingInfo = [PSCustomObject]@{
             Title          = $Title + " " + "($SpeakerName)"
-            Date           = Get-Date $Date -UFormat "%A, %B %d"
+            Date           = Get-Date $MeetingDate -UFormat "%A, %B %d"
             Description    = $Description
         }
 

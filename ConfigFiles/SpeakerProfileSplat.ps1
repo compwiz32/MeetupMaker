@@ -1,12 +1,12 @@
 $SpeakerSplat = @{
-    FirstName     = "Jonathan"
-    LastName      = "Moss"
-    Nickname      = $null
-    EmailAddress  = "jwmoss88@gmail.com"
-    Website       = $null
-    TwitterHandle = "@jwmoss"
-    GitHubAddress = "https://github.com/jwmoss"
-    SpeakerBio    = "is a Release Operations Engineer for Mozilla and a long time PowerShell community contributor."
+    FirstName     = 'Mike'
+    LastName      = 'Kanakos'
+    Nickname      = 'the commandline ninja'
+    EmailAddress  = 'mkanakos@gmail.com'
+    Website       = 'https://commandline.ninja'
+    TwitterHandle = '@mikekanakos'
+    GitHubAddress = 'https://github.com/compwiz32'
+    SpeakerBio    = "is a multi-year Microsoft MVP and Senior Infrastructure Tools Engineer for Invisalign focusing on creating automation to eliminate manual workloads."
 }
 
 New-SpeakerProfile @SpeakerSplat
