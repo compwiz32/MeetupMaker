@@ -1,24 +1,28 @@
 $MeetingInfoSplat = @{
-    Title = "Getting started with the Secret Mangement Module"
-    MeetingDate = "09/20/2022"
-    EventType = "Hybrid"
-    MeetingStartTime = "6:00 pm"
+    Title = "Building extensible modules with PowerShell"
+    MeetingDate = "01/04/2023"
+    EventType = "Remote"
+    MeetingStartTime = "8:00 pm"
 
     VideoChatLink = "https://meeting.rtpsug.com/"
 
     TimeZoneInfo = "https://meeting.rtpsug.com/timezoneinfo"
 
-    Tagline = "$($SpeakerProfile.Name) will show you HOW and WHY to use the Secret Management module to manage your secrets."
+    Tagline = "$($SpeakerProfile.Name) will chat with us about how to get started with extensible module authoring, and making your PowerShell session pretty."
 
     Description = @"
-You may have heard about the recent UBER breach that was caused by someone hard coding admin credentials into a script and then that script being discovered by an intruder. The shocking thing about this breach is that it was so easily preventable. One method to prevent privileged information from being accessed easily is to use a credential manager.
+Let's talk about writing modules for PowerShell. You know the drill: write scripts, make those scripts re-useable and then package them up into modules to make them easy to distribute... But there's a lot of thought that goes into the architecture of modules. If done right, you can build modules that can allow new capabilities and functionality for the future through extensibility.
 
-$($SpeakerProfile.Name) will show you HOW and WHY to use the Secret Management module to manage your secrets. This session will cover installation and configuration, daily usage, and finsh up with how to set up and connect to a remote vault in the cloud!
+$($SpeakerProfile.Name) will chat with us about how to get started with extensible module authoring, and making your PowerShell session pretty. His talk will cover two topics that will seem unrelated at first:
+- Ways to write extensible modules and ideas for writing modules that let other modules extend them.
+- Reviewing some fancy modules he's written recently: the EzTheme modules for styling PSStyle, PSReadLine, Powerline, and much more.
+
+By the end of this demo you see how these two topics are related and how you can benefit if you build modules to be extensible.
 "@
 
-    SocialHashTags = "#PowerShell, #AZKeyvault, #SecretManagment"
+    SocialHashTags = "#PowerShell, #PSStyle, #PSReadLine, #Powerline"
 
-    VideoHashTags = "PowerShell secretmanagement module tutorial","PowerShell SecretManagement How to","Getting started with the PowerShell SecretManagement module", "Automating secret management with PowerShell", "PowerShell & Azure", "Learn how to setup your first PowerShell secret management vault","PowerShell","PowerShell SecretManagement", "Getting started with Azure Keyvault and PowerShell", "AZKeyvault", "Azure Keyvault"
+    VideoHashTags = "how to get started with extensible module authoring","learn to build extensible PowerShell modules","PowerShell modules", "PowerShell Best Practices for extensible module authoring", "how to make your code look pretty","PowerShell best practices"
 }
 
 New-MeetingData @MeetingInfoSplat
